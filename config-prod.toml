@@ -2,8 +2,8 @@ title = "Smart[Fleet] Platform"
 theme = "hugo-theme-learn"
 [params]
   themeVariant = "custom"
-  newsletterUrl = "http://vmsmartfleet.com:3030/api/Newsletters/"
-  devportalUrl = "http://vmsmartfleet.com:9080/"
+  newsletterUrl = "https://smartfleet.sktelecom.com/api/Newsletters/"
+  devportalUrl = "https://smartfleet.sktelecom.com:80/"
   isNewsletterUse = "true"
 
 [outputs]
