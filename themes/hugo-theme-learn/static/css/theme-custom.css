@@ -1,0 +1,334 @@
+:root {
+  --MAIN-TEXT-color: #323232;
+  /* Color of text by default */
+  --MAIN-TITLES-TEXT-color: #5e5e5e;
+  /* Color of titles h2-h3-h4-h5 */
+  --MAIN-LINK-color: #1C90F3;
+  /* Color of links */
+  --MAIN-LINK-HOVER-color: #167ad0;
+  /* Color of hovered links */
+  --MAIN-ANCHOR-color: #1C90F3;
+  /* color of anchors on titles */
+  --MENU-HEADER-BG-color: #2980B9;
+  /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: #2980B9;
+  /*Color of menu header border */
+  --MENU-SEARCH-BG-color: #fff;
+  /* Search field background color (by default borders + icons) */
+  --MENU-SEARCH-BOX-color: #aaa;
+  /* Override search field border color */
+  --MENU-SEARCH-BOX-ICONS-color: #aaa;
+  /* Override search field icons color */
+  --MENU-SECTIONS-ACTIVE-BG-color: #20272b;
+  /* Background color of the active section and its childs */
+  --MENU-SECTIONS-BG-color: #252c31;
+  /* Background color of other sections */
+  --MENU-SECTIONS-LINK-color: #ccc;
+  /* Color of links in menu */
+  --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6;
+  /* Color of links in menu, when hovered */
+  --MENU-SECTION-ACTIVE-CATEGORY-color: #777;
+  /* Color of active category text */
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff;
+  /* Color of background for the active category (only) */
+  --MENU-VISITED-color: #33a1ff;
+  /* Color of 'page visited' icons in menu */
+  --MENU-SECTION-HR-color: #20272b;
+  /* Color of <hr> separator in menu */
+}
+
+body {
+  color: var(--MAIN-TEXT-color) !important;
+}
+
+textarea:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--MAIN-TITLES-TEXT-color) !important;
+}
+
+a {
+  color: var(--MAIN-LINK-color);
+}
+
+.anchor {
+  color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+  color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar ul li.visited>a .read-icon {
+  color: var(--MENU-VISITED-color);
+}
+
+#body a.highlight:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  background-color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar {
+  background-color: var(--MENU-SECTIONS-BG-color);
+}
+
+#sidebar #header-wrapper {
+  background: var(--MENU-HEADER-BG-color);
+  color: var(--MENU-SEARCH-BOX-color);
+  border-color: var(--MENU-HEADER-BORDER-color);
+}
+
+#sidebar .searchbox {
+  border-color: var(--MENU-SEARCH-BOX-color);
+  background: var(--MENU-SEARCH-BG-color);
+}
+
+#sidebar ul.topics>li.parent,
+#sidebar ul.topics>li.active {
+  background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+
+#sidebar .searchbox * {
+  color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar a {
+  color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a:hover {
+  color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar ul li.active>a {
+  background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+  color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar hr {
+  border-color: var(--MENU-SECTION-HR-color);
+}
+
+body #chapter h1 {
+  /* font-size: 3.5rem; */
+  font-size: 2.5rem;
+}
+
+#chapter h3 {
+  font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  text-align: initial;
+}
+
+@media only all and (min-width: 48em) and (max-width: 59.938em) {
+  body #chapter h1 {
+    /* font-size: 3rem; */
+    font-size: 2rem;
+  }
+}
+
+@media only all and (max-width: 47.938em) {
+  body #chapter h1 {
+    /* font-size: 2rem; */
+    font-size: 1rem;
+  }
+}
+
+#sidebar ul.topics>li>a {
+  line-height: 2rem;
+  /* font-size: 1.1rem; */
+  font-size: 0.9rem;
+}
+
+/* #chapter p {
+  text-align: center;
+  font-size: 1.0rem;
+} */
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 110% !important;
+  margin: 2.2rem 0 1.2rem 0;
+}
+
+h2 a {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+h2 a:hover {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+
+h3 {
+  font-size: 1.9rem;
+  line-height: 110% !important;
+  margin: 1.9rem 0 0.9rem 0;
+}
+
+h3 a {
+  text-decoration: none !important;
+  color: #404040 !important;
+  font-weight: 400;
+}
+h3 a:hover {
+  text-decoration: none !important;
+  color: #404040 !important;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.7rem;
+  line-height: 110% !important;
+  margin: 1.7rem 0 0.7rem 0;
+}
+
+h4 a {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+h4 a:hover {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+
+h5 {
+  font-size: 1.3rem;
+  line-height: 110% !important;
+  margin: 1.3rem 0 0.3rem 0;
+}
+
+h5 a {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+h5 a:hover {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 110% !important;
+  margin: 1rem 0 0.1rem 0;
+}
+
+h6 a {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+h6 a:hover {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+
+.notices {
+  margin: 2rem 0;
+  position: relative;
+}
+
+p.notices {
+  padding: 15px;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  color: #666;
+}
+
+p.notices:first-child:before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: FontAwesome;
+  content: '';
+  left: 10px;
+}
+
+p.notices:first-child:after {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem;
+}
+
+p.notices.note {
+  /* border-top: 30px solid #6AB0DE; */
+  background: #E7F2FA;
+}
+
+p.notices.note:first-child:after {
+  content: '주석';
+}
+
+#chapter p {
+  text-align: initial;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  font-size: 18px !important;
+}
+
+.header_custom {
+  color: #fcfcfc !important;
+  font-size: 100%;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 6px;
+  margin-bottom: .309em;
+}
+
+/* #sidebar ul.topics ul {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.table-of-contents.toc.bd-callout {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.table-of-contents.toc.bd-callout {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.table-of-contents.toc.bd-callout ul ul ul ul a li {
+  margin-left: 3rem;
+}
+
+.table-of-contents.toc.bd-callout ul ul ul a li {
+  margin-left: 1.5rem;
+} */
