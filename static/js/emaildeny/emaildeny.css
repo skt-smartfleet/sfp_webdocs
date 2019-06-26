@@ -1,0 +1,99 @@
+/* The Modal (background) */
+.emaildeny-modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box  모델 기본 내용인데 현재 이메일 수집 거부에 맞게 스타일 조정*/
+
+
+.emaildeny-modal-line {
+  margin: 35px auto 34px auto;
+  width: 46px;
+  height: 1px;
+  background-color: #888888;
+}
+
+.emaildeny-modal-title {
+  margin: 0 auto;
+  font-family: 'NotoKr';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.emaildeny-read {
+  font-family: 'NotoKr';
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9c9c9c;
+}
+
+/* The Close Button */
+.emaildeny-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.emaildeny-modal .close:hover,
+.emaildeny-modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.emaildeny-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  height: auto;
+  position: relative;
+}
+
+
+/* 디자인 시안에 맞는 팝업 크기 유지를 위한 기준점 570px */
+@media (min-width: 571px) {
+  .emaildeny-modal-content {
+    margin: 12% auto; /* 15% from the top and centered */
+    padding: 40px;
+    width: 490px; /* Could be more or less, depending on screen size */
+    text-align: center;
+    min-width: 250px;
+  }
+
+}
+
+@media (max-width: 570px) {
+
+  .emaildeny-modal-content {
+    margin: 20% 15px 20% 15px; /* 15% from the top and centered */
+    padding: 35px;
+    text-align: center;
+    padding: 35px;
+    /* border: 1px solid #888; */
+    text-align: center;
+  }
+
+}

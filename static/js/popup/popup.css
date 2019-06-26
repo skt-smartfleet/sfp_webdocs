@@ -1,0 +1,146 @@
+/* The Modal (background) */
+.modalpop {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalpop-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.modalpop-header .title {
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  color: #444;
+  font-weight: 200;
+}
+
+
+
+.modalpop-sub .choose {
+  min-height: 99px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  font-weight: 200;
+  color: #555;
+  line-height: 24px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalpop-sub .action-items {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.action-items .btn {
+  /* margin: 0 2.5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #26a69a; */
+  width: 101px;
+  height: 37px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 0;
+  line-height: 37px;
+  text-align: center;
+  padding: 0;
+}
+
+.modalpop .action-items .btn:hover {
+  width: 101px;
+  height: 37px;
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #333;
+  border: 1px solid #333;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 0;
+  line-height: 37px;
+  text-align: center;
+  padding: 0;
+  opacity: 0.9;
+}
+
+/* The Close Button */
+.modalpop .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalpop .close:hover,
+.modalpop .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalpop-content {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 4.6px 0.4px rgba(0, 0, 0, 0.14);
+  border: 1px solid #888;
+  text-align: center;
+  height: auto;
+  position: relative;
+  font-family: 'NotoKr';
+  font-weight: 300;
+}
+
+@media (min-width: 571px) {
+  .modalpop-content {
+    margin: 12% auto; /* 15% from the top and centered */
+    width: 570px; /* Could be more or less, depending on screen size */
+    text-align: center;
+    min-width: 350px;
+  }
+
+  .modalpop-sub {
+    padding: 30px 30px 30px 30px;
+  }
+
+}
+
+/* 디자인 시안에 맞는 팝업 크기 유지를 위한 기준점 570px */
+@media (max-width: 570px) {
+
+  .modalpop-content {
+    margin: 20% 15px 20% 15px; /* 15% from the top and centered */
+    padding: 4px;
+    text-align: center;
+    /* border: 1px solid #888; */
+    text-align: center;
+  }
+
+  .modalpop-sub {
+    padding: 0 15px 15px 15px;
+  }
+
+}
