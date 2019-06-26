@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div class="logo">
+      <a href="/">
+        <img src="{{ "images/logo.png" | absURL }}" />
+      </a>
+  </div>
+  <div class="header-right">
+    {{if eq .Site.Params.isNewsletterUse "true"}}  
+    <form id="newsForm" name="newsForm" onsubmit="return createNewsletter('{{ .Site.Params.newsletterUrl }}', false)" novalidate>
+      <div class="subscribe">
+        <input type="email" placeholder="E-mail" name="email" />
+        <a href="javascript:createNewsletter('{{ .Site.Params.newsletterUrl }}', false);">Newsletter 신청</a>
+      </div>
+    </form>
+    {{end}}
+  </div>
+</div>

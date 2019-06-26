@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Smart[Fleet] Platform"
+theme = "hugo-theme-learn"
+[params]
+  themeVariant = "custom"
+  newsletterUrl = "http://vmsmartfleet.com:3030/api/Newsletters/"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

@@ -1,0 +1,10 @@
+title = "Smart[Fleet] Platform"
+theme = "hugo-theme-learn"
+[params]
+  themeVariant = "custom"
+  newsletterUrl = "https://smartfleet.sktelecom.com:9090/api/Newsletters/"
+  devportalUrl = "https://smartfleet.sktelecom.com:9080/"
+  isNewsletterUse = "false"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
